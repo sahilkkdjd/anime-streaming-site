@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stream Anime Online - Watch your favorite anime shows and movies.">
+    <meta name="keywords" content="anime, streaming, hianime, anime website, watch anime">
+    <title>Hianime Clone - Stream Anime Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1c1c1c;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #ff4081;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .search-bar {
+            margin: 2rem auto;
+            max-width: 600px;
+            display: flex;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 0.5rem;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .categories, .anime-list {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .categories h2, .anime-list h2 {
+            margin-bottom: 1rem;
+        }
+        .categories ul, .anime-list ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+        }
+        .categories ul li, .anime-list ul li {
+            background-color: #1c1c1c;
+            padding: 1rem;
+            border-radius: 8px;
+            flex: 1 1 calc(25% - 1rem);
+            text-align: center;
+        }
+        .categories ul li a, .anime-list ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .video-player {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background-color: #1c1c1c;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .promo-banner {
+            background-color: #d32f2f;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem auto;
+            color: #fff;
+            border-radius: 8px;
+        }
+        .promo-banner h3 {
+            margin: 0.5rem 0;
+        }
+        .promo-banner button {
+            background-color: #fff;
+            color: #d32f2f;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .trending, .latest-episodes {
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .trending h2, .latest-episodes h2 {
+            margin-bottom: 1rem;
+        }
+        .thumbnails, .episode-grid {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .thumbnails img, .episode-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .episode {
+            background-color: #1c1c1c;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            flex: 1 1 calc(25% - 1rem);
+        }
+        .episode p {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #1c1c1c;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>h!anime</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for Anime...">
+        <button>Search</button>
+    </div>
+
+    <section class="promo-banner">
+        <h3>BEST Free Anime App</h3>
+        <p>Watch all Anime in HD on your Android devices</p>
+        <button>Download Now</button>
+    </section>
+
+    <section class="carousel">
+        <h2>#3 Spotlight</h2>
+        <img src="my-hero-academia.jpg" alt="My Hero Academia: Vigilantes">
+        <h3>My Hero Academia: Vigilantes</h3>
+        <button class="watch-now">Watch Now</button>
+        <button class="details">Detail</button>
+    </section>
+
+    <section class="trending">
+        <h2>Trending</h2>
+        <div class="thumbnails">
+            <img src="trending1.jpg" alt="Trending Anime 1">
+            <img src="trending2.jpg" alt="Trending Anime 2">
+            <img src="trending3.jpg" alt="Trending Anime 3">
+            <img src="trending4.jpg" alt="Trending Anime 4">
+        </div>
+    </section>
+
+    <section class="latest-episodes">
+        <h2>Latest Episode</h2>
+        <div class="episode-grid">
+            <div class="episode">
+                <img src="keyboard-immortal.jpg" alt="Keyboard Immortal">
+                <p>Keyboard Immortal</p>
+                <p>ONA • 8m</p>
+                <p>CC: 109 • Total: 150</p>
+            </div>
+            <div class="episode">
+                <img src="super-cube.jpg" alt="The Super Cube">
+                <p>The Super Cube</p>
+                <p>ONA • 15m</p>
+                <p>CC: 7 • Total: 12</p>
+            </div>
+            <div class="episode">
+                <img src="anime-3.jpg" alt="Anime 3">
+                <p>Anime 3</p>
+                <p>ONA • Info Here</p>
+                <p>CC: 3 • Total: 3</p>
+            </div>
+            <div class="episode">
+                <img src="anime-4.jpg" alt="Anime 4">
+                <p>Anime 4</p>
+                <p>ONA • Info Here</p>
+                <p>CC: 3 • Total: 1</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hianime Clone. All Rights Reserved.</p>
+    </footer>
+</body>
+  </html>
